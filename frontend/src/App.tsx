@@ -11,8 +11,8 @@ import Profile from './app/components/user/Profile';
 import { Counter } from './features/counter/counter';
 import './index.css';
 
-
 function App() {
+
   return (
     <BrowserRouter>
       <Routes>
@@ -23,8 +23,8 @@ function App() {
         {/* -------------------------------------------------- */}
 
         {/* Unprotected routes, like /login and /callback */}
-        <Route path='/' element={<Home/>} />
-        <Route path='/login' element={<Counter/>} />
+        <Route path='/' element={<Login/>} />
+        <Route path='/login' element={<Login/>} />
         {/* -------------------------------------------------- */}
 
       </Routes>
